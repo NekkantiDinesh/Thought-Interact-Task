@@ -1,0 +1,306 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    /* background-color: black; */
+}
+
+.landingPage{
+    position: relative;
+}
+
+.navBar {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.logo img {
+    max-width: 80%;
+}
+
+.navBarList ul {
+    display: flex;
+    list-style: none;
+    margin-right: 50px;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-underline-offset: 10px;
+}
+
+.hover-underline-animation {
+    position: relative;
+}
+
+.hover-underline-animation:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    top: 18px;
+    background-color: red;
+    transition: 0.5s;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+}
+
+.bannerSection img {
+    max-width: 100%;
+}
+
+.bannerText {
+    position: absolute;
+    top: 50%;
+    right: 180px;
+    font-size: 30px;
+}
+
+.bannerText .firstLine {
+    font-family: 'Anton', sans-serif;
+    width: 350px;
+    padding-left: 20px;
+    background-color: red;
+    color: white;
+}
+
+.bannerText .secondLine {
+    font-family: 'Anton', sans-serif;
+    padding: 0px 20px 0px 20px;
+    margin-top: -35px;
+    background-color: white;
+    color: red;
+}
+
+.bannerText .inspire {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 80%;
+    right: 50%;
+    font-size: 16px;
+}
+
+.new{
+    background-color: rgb(233, 231, 231);
+    display: flex;
+    align-items: center;
+}
+
+.new h1{
+    display: block;
+    color: white;
+    background-color: red;
+    padding: 30px 10px;
+    width: 35%;
+    font-family: 'Anton';
+    letter-spacing: 2px;
+    margin-left: 10%;
+    position: relative;
+}
+
+.square{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    left: 342px;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.scroll{
+    margin-left: 50px;
+}
+
+@media only screen and (max-width: 2560px) {
+
+
+    .bannerSection img{
+        width: 100%;
+    }
+
+    .bannerText {
+        top: 57%;
+        right: 22%;
+        font-size: 35px;
+    }
+
+    .bannerText .firstLine{
+        width: 400px;
+    }
+
+    .new h1{
+        width: 10%
+    }
+    
+    .square{
+        left: 450px;
+    }
+}
+
+
+@media only screen and (max-width: 1440px){
+
+    .bannerText {
+        top: 50%;
+        right: 10%;
+    }
+
+    .new h1{
+        width: 33%;
+    }
+
+    .square{
+        left: 330px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+
+
+    .bannerText {
+        top: 55%;
+        right: 10%;
+        font-size: 20px;
+    }
+
+    .bannerText .firstLine{
+        width: 280px;
+    }
+
+    .new h1{
+        width: 70%;
+    }
+
+    .square{
+        left: 290px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .bannerText {
+        right: 0;
+    }
+
+    .new h1{
+        width: 130%;
+    }
+
+    .square{
+        left: 256px;
+    }
+}
+
+@media only screen and (max-width: 426px){
+
+
+    .navBar{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .navBarList{
+        font-size: 12px;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .navBarList ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navBarList ul li{
+        margin-bottom: 10px;
+    }
+
+    .bannerText{
+        position: relative;
+        font-size: 16px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bannerText .firstLine{
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .bannerText .inspire{
+        position: absolute;
+        font-size: 12px;
+        top: 80px;
+        left: 32%;
+    }
+
+    .new h1{
+        font-size: 15px;
+        width: 150%;
+        padding: 15px 5px;
+        margin-left: 10px;
+        z-index: 1;
+    }
+
+    .square{
+        left: 100px;
+        z-index: 0;
+    }
+
+    .scroll{
+        margin-left: 20px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 376px){
+    .new h1{
+        font-size: 15px;
+        width: 200%;
+        padding: 15px 5px;
+        margin-left: 10px;
+        z-index: 1;
+    }
+
+    .square{
+        left: 100px;
+    }
+}
+
+
+@media only screen and (max-width: 320px){
+    .new h1{
+        font-size: 15px;
+        width: 300%;
+        padding: 15px 5px;
+        margin-left: 10px;
+        z-index: 1;
+    }
+
+    .square{
+        left: 100px;
+    }
+}
